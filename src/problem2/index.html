@@ -8,18 +8,120 @@
 </head>
 
 <body>
-
-  <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
-  <form onsubmit="return !1">
-    <h5>Swap</h5>
-    <label for="input-amount">Amount to send</label>
-    <input id="input-amount" />
-
-    <label for="output-amount">Amount to receive</label>
-    <input id="output-amount" />
-
-    <button>CONFIRM SWAP</button>
-  </form>
+  <div class="main_container">
+    <div class="main_title">
+      <p class="main_font">Currency Swap</p>
+    </div>
+    <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
+    <div class="main_center">
+        <div>
+          <p class="main_subtitle1">Currency Swap</p>
+        <p class="main_subtitle2">Enter the amount you want to swap</p>
+        </div>
+        <div style="background-color: #BFB9B6; border-radius: 20px;">
+        <div>
+          <div class="dropdown" id="dropdown1">
+            <button class="dropbtn">
+              <span class="dropbtn_content">Select Curruncy to Send</span>
+              <span class="dropbtn_click" style="font-family: Material Icons; font-size : 16px; color : #3b3b3b; float:right;"
+              onclick="dropdown('dropdown-content1')">arrow_drop_down</span>
+            </button>
+            <div class="dropdown-content" id="dropbtn_content1">
+              <div onclick="show(this.innerText)">BLUR</div>
+              <div onclick="show(this.innerText)">bNEO</div>
+              <div onclick="show(this.innerText)">BUSD</div>
+              <div onclick="show(this.innerText)">BUSD</div>
+              <div onclick="show(this.innerText)">USD</div>
+              <div onclick="show(this.innerText)">ETH</div>
+              <div onclick="show(this.innerText)">GMX</div>
+              <div onclick="show(this.innerText)">STEVMOS</div>
+              <div onclick="show(this.innerText)">LUNA</div>
+              <div onclick="show(this.innerText)">RATOM</div>
+              <div onclick="show(this.innerText)">STRD</div>
+              <div onclick="show(this.innerText)">EVMOS</div>
+              <div onclick="show(this.innerText)">IBCX</div>
+              <div onclick="show(this.innerText)">IRIS</div>
+              <div onclick="show(this.innerText)">ampLUNA</div>
+              <div onclick="show(this.innerText)">KUJI</div>
+              <div onclick="show(this.innerText)">STOSMO</div>
+              <div onclick="show(this.innerText)">USDC</div>
+              <div onclick="show(this.innerText)">axlUSDC</div>
+              <div onclick="show(this.innerText)">ATOM</div>
+              <div onclick="show(this.innerText)">STATOM</div>
+              <div onclick="show(this.innerText)">OSMO</div>
+              <div onclick="show(this.innerText)">rSWTH</div>
+              <div onclick="show(this.innerText)">STLUNA</div>
+              <div onclick="show(this.innerText)">LSI</div>
+              <div onclick="show(this.innerText)">OKB</div>
+              <div onclick="show(this.innerText)">OKT</div>
+              <div onclick="show(this.innerText)">SWTH</div>
+              <div onclick="show(this.innerText)">USC</div>
+              <div onclick="show(this.innerText)">USDC</div>
+              <div onclick="show(this.innerText)">USDC</div>
+              <div onclick="show(this.innerText)">USDC</div>
+              <div onclick="show(this.innerText)">WBTC</div>
+              <div onclick="show(this.innerText)">wstETH</div>
+              <div onclick="show(this.innerText)">YieldUSD</div>
+              <div onclick="show(this.innerText)">ZIL</div>
+            </div>
+          </div>
+          <div class="inputBox">
+            <input id="input-amount" type="text" placeholder="Enter amount to send" />
+          </div>
+        </div>
+        <div style="padding-top: 20px; margin-top: 100px;">
+          <div class="dropdown" id="dropdown2">
+            <button class="dropbtn">
+              <span class="dropbtn_content">Select Currency to Receive</span>
+              <span class="dropbtn_click" style="font-family: Material Icons; font-size : 16px; color : #3b3b3b; float:right;"
+              onclick="dropdown('dropdown-content2')">arrow_drop_down</span>
+            </button>
+            <div class="dropdown-content" id="dropdown-content2">
+              <div onclick="show(this.innerText)">BLUR</div>
+              <div onclick="show(this.innerText)">bNEO</div>
+              <div onclick="show(this.innerText)">BUSD</div>
+              <div onclick="show(this.innerText)">BUSD</div>
+              <div onclick="show(this.innerText)">USD</div>
+              <div onclick="show(this.innerText)">ETH</div>
+              <div onclick="show(this.innerText)">GMX</div>
+              <div onclick="show(this.innerText)">STEVMOS</div>
+              <div onclick="show(this.innerText)">LUNA</div>
+              <div onclick="show(this.innerText)">RATOM</div>
+              <div onclick="show(this.innerText)">STRD</div>
+              <div onclick="show(this.innerText)">EVMOS</div>
+              <div onclick="show(this.innerText)">IBCX</div>
+              <div onclick="show(this.innerText)">IRIS</div>
+              <div onclick="show(this.innerText)">ampLUNA</div>
+              <div onclick="show(this.innerText)">KUJI</div>
+              <div onclick="show(this.innerText)">STOSMO</div>
+              <div onclick="show(this.innerText)">USDC</div>
+              <div onclick="show(this.innerText)">axlUSDC</div>
+              <div onclick="show(this.innerText)">ATOM</div>
+              <div onclick="show(this.innerText)">STATOM</div>
+              <div onclick="show(this.innerText)">OSMO</div>
+              <div onclick="show(this.innerText)">rSWTH</div>
+              <div onclick="show(this.innerText)">STLUNA</div>
+              <div onclick="show(this.innerText)">LSI</div>
+              <div onclick="show(this.innerText)">OKB</div>
+              <div onclick="show(this.innerText)">OKT</div>
+              <div onclick="show(this.innerText)">SWTH</div>
+              <div onclick="show(this.innerText)">USC</div>
+              <div onclick="show(this.innerText)">USDC</div>
+              <div onclick="show(this.innerText)">USDC</div>
+              <div onclick="show(this.innerText)">USDC</div>
+              <div onclick="show(this.innerText)">WBTC</div>
+              <div onclick="show(this.innerText)">wstETH</div>
+              <div onclick="show(this.innerText)">YieldUSD</div>
+              <div onclick="show(this.innerText)">ZIL</div>
+            </div>
+          </div>
+          <div class="inputBox">
+            <input id="input-amount" type="text" placeholder="Amount you will receive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 

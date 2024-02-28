@@ -1,8 +1,128 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 body {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  min-width: 360px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.main_container {
+  width: 100%;
+  height: 100%;
+}
+
+.main_title {
+  height: 8%;
+  width: 100%;
+  border-bottom-width: 1px;
+  border-bottom-color: black;
+  border-bottom: solid;
+  float: left;
+}
+
+.main_font {
+  margin-top: 0%;
+  font-weight: 600;
+  font-size: 37px;
+}
+
+.main_center {
+  width: 33%;
+  height: 370px;
+  margin: 0px auto;
+  margin-top: 12%;  
+  padding-top: 2px;
+  text-align: center;
+}
+
+.main_subtitle1 {
+  font-weight: 700;
+  font-size: 43px;
+  margin-top: 0%;
+  margin-bottom: 3px;
+}
+
+.main_subtitle2 {
+  font-weight: 300;
+  font-size: 20px;
+  color: gray;
+}
+
+.dropdown{
+  margin-left: 5px;
+  display : inline-block;
+}
+
+.dropbtn_icon{
+  font-family : 'Material Icons';
+}
+.dropbtn{
+  display : block;
+  border : 2px solid rgb(94, 94, 94);
+  border-radius : 4px;
+  background-color: #fcfcfc;
+  font-weight: 400;
+  color : rgb(124, 124, 124);
+  padding : 12px;
+  width :200px;
+  text-align: left;
+  cursor : pointer;
+  font-size : 12px;
+  z-index :1;
+  position : relative;
+}
+.dropdown-content{
+  display : none;
+  font-weight: 400;
+  background-color: #fcfcfc;
+  min-width : 200px;
+  border-radius: 8px;
+  height : 160px;
+  overflow : scroll;
+  box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
+}
+.dropdown-content::-webkit-scrollbar{
+  width : 5px;
+  height : 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb{
+  border-radius : 2px;
+  background-color :rgb(194, 194, 194)
+}
+
+.dropdown-content div{
+  display : block;
+  text-decoration : none;
+  color : rgb(37, 37, 37);
+  font-size: 12px;
+  padding : 12px 20px;
+}
+.dropdown-content div:hover{
+  background-color: rgb(226, 226, 226);
+}
+
+.dropdown-content.show{
+  display : block;
+}
+
+.inputBox {
+  float: right;
+  margin-right: 35px;
+}
+
+.inputBox input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 180px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.inputBox input:focus {
+  outline: none;
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px dodgerblue;
 }
